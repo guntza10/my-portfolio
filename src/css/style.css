@@ -15,6 +15,7 @@
   --main-color: #ea580c;
   --gradient-color-stop-1: #df8908;
   --gradient-color-stop-2: #ff1d15;
+  --bg-track-scrollbar: #333;
 }
 
 html {
@@ -31,6 +32,34 @@ section {
   /* make section height cover entire page  */
   min-height: 100vh;
   padding: 10rem 15%;
+}
+
+/* custom webkit scrollbar */
+::-webkit-scrollbar {
+  width: 18px;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--second-bg-color);
+  border-radius: 1rem;
+  margin-block: 1rem;
+}
+::-webkit-scrollbar-track:hover {
+  background-color: var(--bg-track-scrollbar);
+  box-shadow: 0 0 25px var(--bg-track-scrollbar),
+    0 0 50px var(--bg-track-scrollbar), 0 0 100px var(--bg-track-scrollbar);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    270deg,
+    var(--gradient-color-stop-1) 10%,
+    var(--gradient-color-stop-2) 100%
+  );
+  border-radius: 1rem;
+  box-shadow: 0 0 25px var(--main-color);
+}
+::-webkit-scrollbar-thumb:hover {
+  box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color),
+    0 0 100px var(--main-color);
 }
 
 /* header */
@@ -133,7 +162,7 @@ span.gradient-text {
   line-height: 1;
 }
 
-.home-content h3 {
+.home-content h2 {
   font-size: 4rem;
   margin: 1rem 0;
 }
@@ -211,4 +240,38 @@ span.gradient-text {
   box-shadow: 0 0 25px var(--main-color);
   background-color: var(--main-color);
   color: black;
+}
+
+/* about */
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  background-color: var(--second-bg-color);
+}
+
+.about-img img {
+  width: 32vw;
+  border-radius: 50%;
+  box-shadow: 0 0 25px var(--main-color);
+  transition: 0.4s ease-in-out;
+}
+
+.about-img img:hover {
+  box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color),
+    0 0 100px var(--main-color);
+}
+
+.about-content h2 {
+  font-size: 7rem;
+  text-align: left;
+}
+
+.about-content p {
+  font-size: 1.8rem;
+}
+
+.about-content .btn {
+  margin: 3rem 0;
 }
