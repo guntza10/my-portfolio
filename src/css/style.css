@@ -81,6 +81,7 @@ section {
   font-size: 3.5rem;
   color: var(--main-color);
   display: none;
+  cursor: pointer;
 }
 
 .logo {
@@ -146,6 +147,7 @@ span.gradient-text {
   justify-content: center;
   align-items: center;
   gap: 15rem;
+  padding-top: 15rem;
 }
 
 .home-content {
@@ -486,7 +488,7 @@ span.gradient-text {
     color: var(--text-color);
   }
 
-  .navbar .active {
+  .navbar.active {
     display: block;
   }
 
@@ -497,7 +499,6 @@ span.gradient-text {
   /* home */
   .home {
     flex-direction: column-reverse;
-    padding: 5rem 0;
     gap: 5rem;
   }
 
