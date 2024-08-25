@@ -176,7 +176,9 @@ span.gradient-text {
 }
 
 .home-img img {
-  width: 32vw;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
   border-radius: 50%;
   box-shadow: 0 0 25px var(--main-color);
   transition: 0.4s ease-in-out;
@@ -254,7 +256,9 @@ span.gradient-text {
 }
 
 .about-img img {
-  width: 32vw;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
   border-radius: 50%;
   box-shadow: 0 0 25px var(--main-color);
   transition: 0.4s ease-in-out;
@@ -508,7 +512,8 @@ span.gradient-text {
   }
 
   .home-img img {
-    width: 56vw;
+    width: 300px;
+    height: 300px;
   }
 
   /* about */
@@ -523,7 +528,8 @@ span.gradient-text {
   }
 
   .about-img img {
-    width: 52vw;
+    width: 300px;
+    height: 300px;
   }
 
   /* contact */
